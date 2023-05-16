@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click & Eat</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3fe29430bd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/main.css">
+    <!-- for icons  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- for swiper slider  -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- fancy box  -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Click & Eat logo" class="logo-image">
+            </a>
+            <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content">
+                    
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <button type="button" class="btn-buy">Buy Now</button>
+                <i class="fa-solid fa-xmark" id="close-cart"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Best <span>food delivery</span> online</h3>
+        </div>
+    </section>
+
+    <section class="product" id="product">
+        <h1 class="heading" id="products">Our <span>products</span></h1>
+        <div class="menu-list-row">
+            <div class="row g-xxl-5 bydefault_show" id="menu-dish">
+                <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
+                    <div class="dish-box text-center">
+                        <div class="dist-img">
+                            <img src="img/menu/bacon-2.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">Beef Burger</h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">6800 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
+                    <div class="dish-box text-center">
+                        <div class="dist-img">
+                            <img src="img/menu/bacon-3.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">Chicken Burger</h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">6200 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 6 -->
+                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                    <div class="dish-box text-center">
+                        <div class="dist-img">
+                            <img src="img/menu/cheeseburger-2.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">Cheese Burger</h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">5500 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                    <div class="dish-box text-center">
+                        <div class="dist-img">
+                            <img src="img/menu/double-chicken-2.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">Jumbo Chicken Burger</h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">7500 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                    <div class="dish-box text-center">
+                        <div class="dist-img">
+                            <img src="img/menu/hawaii-chicken.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">Hawaii Chicken Burger</h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">7500 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                    <div class="dish-box text-center">
+                        <div class="dist-img">
+                            <img src="img/menu/combo-3.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">Chicken Set</h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">11500 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                    <div class="dish-box text-center">
+                        <div class="dist-img">
+                            <img src="img/menu/box-1.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">Set 1 </h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">9900 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                    <div class="dish-box text-center">
+                        <div class="dist-img">
+                            <img src="img/menu/box-2.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">Set 2</h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">9900 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                    <div class="dish-box text-center">
+                        <div class="dist-img">
+                            <img src="img/menu/box-3.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">Set - 3</h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">9900 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                    <div class="dish-box text-center">
+                        <div class="dist-img">
+                            <img src="img/menu/fries-4.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">Fries</h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">2500 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                    <div class="dish-box text-center">
+                        <div class="dist-img">
+                            <img src="img/menu/coca-cola.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">Coca Cola</h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">1600 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                    <div class="dish-box text-center">
+                        <div class="dist-img">
+                            <img src="img/menu/coca-cola.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">Coca Cola Small</h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">1100 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                    <div class="dish-box text-center">
+                        <div class="dist-img">
+                            <img src="img/menu/pizza-7.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">Cheese Pizza</h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">23500 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                    <div class="dish-box text-center">
+                        <div class="dist-img">
+                            <img src="img/menu/pizza-4.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">Pepperoni Pizza</h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">24600 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                    <div class="dish-box text-center">
+                        <div class="dist-img">
+                            <img src="img/menu/slice-fresh-pizza-with-pepperoni-white-removebg-preview.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">A slice of pizza</h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">4200 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                    <div class="dish-box text-center">
+                        <div class="dist-img">
+                            <img src="img/menu/1.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">Roasted Chicken</h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">9500 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                    <div class="dish-box text-center">
+                        <div class="dist-img">
+                            <img src="img/menu/2.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">Beef Steak</h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">14500 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                    <div class="dish-box text-center">
+                        <div class="dist-img"> 
+                            <img src="img/menu/3.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">Pasta</h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">8000 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                    <div class="dish-box text-center">
+                        <div class="dist-img">
+                            <img src="img/menu/4.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">Noodle</h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">7400 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                    <div class="dish-box text-center">
+                        <div class="dist-img">
+                            <img src="img/menu/5.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">Diet Set 1 (Breakfast)</h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">4900 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                    <div class="dish-box text-center">
+                        <div class="dist-img">
+                            <img src="img/menu/6.png" alt="" class="product-img">
+                        </div>
+                        <div class="dish-title">
+                            <h3 class="h3-title product-title">Diet Set 2 (Salad)</h3>
+                        </div>
+                        <div class="dist-bottom-row">
+                            <ul>
+                                <li>
+                                    <b class="price">6500 Ks</b>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+   
+    <script src="assets/js/cart.js"></script>
+</body>
+</html>
